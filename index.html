@@ -3,122 +3,205 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dharmveer Packers & Movers - Area Search</title>
+<title>Dharmveer Packers & Movers | Hyderabad</title>
+<meta name="description" content="Dharmveer Packers & Movers Hyderabad - home shifting, office shifting, packing, loading, transport and vehicle moving services. Get a free quote.">
+<meta name="keywords" content="packers and movers Hyderabad, movers Secunderabad, home shifting Hyderabad, office shifting Hyderabad, Bowenpally packers movers">
 <style>
-  *{box-sizing:border-box}
-  body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#172033}
-  .wrap{max-width:760px;margin:40px auto;padding:20px}
-  .card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,.08)}
-  h1{margin:0 0 8px;font-size:28px}
-  p{color:#667085;margin:0 0 22px}
-  label{font-weight:700;display:block;margin-bottom:8px}
-  .search{position:relative}
-  input{width:100%;padding:15px 16px;border:1px solid #d0d5dd;border-radius:12px;font-size:16px;outline:none}
-  input:focus{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.12)}
-  .suggestions{position:absolute;left:0;right:0;top:58px;background:#fff;border:1px solid #ddd;border-radius:12px;max-height:360px;overflow:auto;z-index:10;box-shadow:0 12px 25px rgba(0,0,0,.12);display:none}
-  .item{padding:12px 15px;cursor:pointer;border-bottom:1px solid #f0f0f0}
-  .item:last-child{border-bottom:0}
-  .item:hover{background:#f4f7ff}
-  .city{font-weight:700}
-  .state{font-size:13px;color:#667085;margin-top:3px}
-  .hint{font-size:13px;color:#667085;margin-top:10px}
-  .selected{margin-top:18px;padding:13px;background:#eef4ff;border-radius:10px;display:none}
+:root{--blue:#082d6b;--blue2:#0b5bd3;--orange:#ff7a00;--light:#f5f8fc;--dark:#101828;--muted:#667085;--white:#fff}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--light)}
+a{text-decoration:none;color:inherit}
+.top{background:var(--blue);color:#fff;text-align:center;padding:9px;font-size:14px}
+header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 2px 14px #00000012}
+.nav{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;color:var(--blue)}
+.badge{background:var(--orange);color:#fff;padding:9px 11px;border-radius:8px}
+nav{display:flex;gap:22px;font-weight:700;font-size:14px}
+nav a:hover{color:var(--orange)}
+.navbtn{background:var(--orange);color:#fff;padding:11px 16px;border-radius:8px}
+.hero{background:linear-gradient(120deg,#082d6b 0%,#0b5bd3 58%,#1559bf 100%);color:#fff}
+.hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.25fr .75fr;gap:45px;align-items:center;padding:70px 20px}
+.pill{display:inline-block;background:#ffffff18;border:1px solid #ffffff30;padding:9px 14px;border-radius:20px;font-weight:700;font-size:14px}
+h1{font-size:52px;line-height:1.05;margin:20px 0 16px}
+.hero p{font-size:18px;line-height:1.6;max-width:720px;color:#eef5ff}
+.actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 20px;border-radius:9px;font-weight:800}
+.primary{background:var(--orange);color:#fff}
+.secondary{background:#fff;color:var(--blue)}
+.trust{display:flex;gap:15px;flex-wrap:wrap;margin-top:25px;font-size:14px}
+.quote{background:#fff;color:var(--dark);border-radius:16px;padding:26px;box-shadow:0 12px 35px #00000030}
+.quote h2{margin-top:0;color:var(--blue)}
+label{display:block;font-weight:700;margin:13px 0 6px}
+input,select{width:100%;padding:13px;border:1px solid #d9dee7;border-radius:8px;font-size:15px;background:#fff}
+input:focus,select:focus{outline:none;border-color:var(--blue2);box-shadow:0 0 0 3px #0b5bd31a}
+.submit{width:100%;border:0;background:var(--orange);color:#fff;padding:14px;border-radius:8px;font-size:16px;font-weight:800;cursor:pointer;margin-top:15px}
+section{padding:70px 20px}
+.container{max-width:1180px;margin:auto}
+.section-title{text-align:center;color:var(--blue);font-size:34px;margin:0 0 12px}
+.section-sub{text-align:center;color:var(--muted);margin:0 auto 35px;max-width:700px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;padding:24px;border-radius:14px;box-shadow:0 5px 20px #0000000c}
+.card h3{color:var(--blue);margin-top:0}
+.area-grid{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.area{background:#fff;border:1px solid #e3e8ef;padding:10px 14px;border-radius:20px}
+.cta{background:var(--blue);color:#fff;text-align:center}
+.cta h2{font-size:34px;margin-top:0}
+footer{background:#071d43;color:#dce7f7;padding:30px 20px;text-align:center}
+.small{font-size:13px;color:#aebed6}
+.whatsapp{position:fixed;right:20px;bottom:20px;width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:25px;z-index:30;box-shadow:0 5px 18px #0004}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}nav{display:none}h1{font-size:42px}}
+@media(max-width:600px){.cards{grid-template-columns:1fr}.navbtn{display:none}h1{font-size:36px}.hero-inner{padding-top:45px}.quote{padding:20px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="card">
-    <h1>Dharmveer Packers & Movers</h1>
-    <p>Enter pickup or service area — suggestions will appear automatically.</p>
 
-    <label for="area">Area / City / State</label>
-    <div class="search">
-      <input id="area" type="text" autocomplete="off"
-             placeholder="Type area, city or state (e.g. Hyderabad, Delhi, Mumbai)">
-      <div id="suggestions" class="suggestions"></div>
-    </div>
-    <div class="hint">All India locations are included. Type at least 2 letters.</div>
-    <div id="selected" class="selected"></div>
+<div class="top">📍 Hyderabad & Secunderabad • Local & Intercity Shifting • Free Quote</div>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#home"><span class="badge">DP</span> Dharmveer Packers & Movers</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#areas">Areas</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="navbtn" href="#quote">Get Free Quote</a>
   </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="pill">⭐ Professional Moving Service in Hyderabad</span>
+      <h1>Move Smart. Move Safe.<br>Move with Dharmveer.</h1>
+      <p>Complete packing and moving solutions for homes, offices, vehicles and commercial goods. Fast response, careful handling and transparent quotations.</p>
+      <div class="actions">
+        <a class="btn primary" href="#quote">Get Free Moving Quote</a>
+        <a class="btn secondary" href="tel:+916377679952">📞 Call Now</a>
+      </div>
+      <div class="trust"><span>✓ Trained Moving Team</span><span>✓ Safe Packing</span><span>✓ Door-to-Door Service</span></div>
+    </div>
+
+    <div class="quote" id="quote">
+      <h2>Get a Free Quote</h2>
+      <form id="quoteForm">
+        <label for="name">Your Name</label>
+        <input id="name" required placeholder="Enter your name">
+
+        <label for="phone">Mobile Number</label>
+        <input id="phone" required inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10-digit mobile number">
+
+        <label for="from">Moving From</label>
+        <input id="from" list="areas" required autocomplete="off" placeholder="Type area / city">
+
+        <label for="to">Moving To</label>
+        <input id="to" list="areas" required autocomplete="off" placeholder="Type area / city">
+
+        <label for="service">Service</label>
+        <select id="service">
+          <option>Home Shifting</option>
+          <option>Office Shifting</option>
+          <option>Packing Service</option>
+          <option>Vehicle Transport</option>
+          <option>Commercial Goods</option>
+        </select>
+
+        <label for="date">Moving Date</label>
+        <input id="date" type="date">
+
+        <button class="submit" type="submit">Get Quote on WhatsApp →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<datalist id="areas">
+<option value="Bowenpally, Hyderabad"><option value="New Bowenpally, Secunderabad"><option value="Alwal, Hyderabad">
+<option value="Balanagar, Hyderabad"><option value="Begumpet, Hyderabad"><option value="Secunderabad">
+<option value="Trimulgherry, Secunderabad"><option value="Kompally, Hyderabad"><option value="Kukatpally, Hyderabad">
+<option value="Miyapur, Hyderabad"><option value="Moosapet, Hyderabad"><option value="Bachupally, Hyderabad">
+<option value="Madhapur, Hyderabad"><option value="HITEC City, Hyderabad"><option value="Kondapur, Hyderabad">
+<option value="Gachibowli, Hyderabad"><option value="Manikonda, Hyderabad"><option value="Narsingi, Hyderabad">
+<option value="Mehdipatnam, Hyderabad"><option value="Tolichowki, Hyderabad"><option value="Banjara Hills, Hyderabad">
+<option value="Jubilee Hills, Hyderabad"><option value="Ameerpet, Hyderabad"><option value="Punjagutta, Hyderabad">
+<option value="LB Nagar, Hyderabad"><option value="Dilsukhnagar, Hyderabad"><option value="Uppal, Hyderabad">
+<option value="Tarnaka, Hyderabad"><option value="Habsiguda, Hyderabad"><option value="Nacharam, Hyderabad">
+<option value="ECIL, Hyderabad"><option value="Kapra, Hyderabad"><option value="Sainikpuri, Secunderabad">
+<option value="Malkajgiri, Hyderabad"><option value="Attapur, Hyderabad"><option value="Shamshabad, Hyderabad">
+</datalist>
+
+<section id="services">
+<div class="container">
+<h2 class="section-title">Our Moving Services</h2>
+<p class="section-sub">Reliable packing, loading, transportation and shifting support for residential and commercial customers.</p>
+<div class="cards">
+<div class="card"><h3>🏠 Home Shifting</h3><p>Safe packing and door-to-door household shifting.</p></div>
+<div class="card"><h3>🏢 Office Shifting</h3><p>Organised office relocation with careful handling.</p></div>
+<div class="card"><h3>📦 Packing Service</h3><p>Professional packing for furniture, appliances and fragile goods.</p></div>
+<div class="card"><h3>🚚 Vehicle Transport</h3><p>Convenient vehicle transportation with careful loading.</p></div>
 </div>
+</div>
+</section>
+
+<section id="how" style="background:#fff">
+<div class="container">
+<h2 class="section-title">How It Works</h2>
+<p class="section-sub">Simple steps from enquiry to delivery.</p>
+<div class="cards">
+<div class="card"><h3>1. Enquiry</h3><p>Tell us your pickup, destination and service requirement.</p></div>
+<div class="card"><h3>2. Quote</h3><p>We discuss your requirement and provide a quotation.</p></div>
+<div class="card"><h3>3. Packing</h3><p>Our team packs and loads your goods carefully.</p></div>
+<div class="card"><h3>4. Delivery</h3><p>Your goods are transported and delivered to the destination.</p></div>
+</div>
+</div>
+</section>
+
+<section id="areas">
+<div class="container">
+<h2 class="section-title">Service Areas</h2>
+<p class="section-sub">Serving Hyderabad, Secunderabad and nearby areas.</p>
+<div class="area-grid">
+<span class="area">Bowenpally</span><span class="area">Secunderabad</span><span class="area">Alwal</span><span class="area">Kompally</span>
+<span class="area">Kukatpally</span><span class="area">Miyapur</span><span class="area">Madhapur</span><span class="area">Kondapur</span>
+<span class="area">Gachibowli</span><span class="area">Banjara Hills</span><span class="area">LB Nagar</span><span class="area">Uppal</span>
+</div>
+</div>
+</section>
+
+<section class="cta" id="contact">
+<div class="container">
+<h2>Need a Moving Quote?</h2>
+<p>Call Dharmveer Packers & Movers for your shifting requirement.</p>
+<div class="actions" style="justify-content:center">
+<a class="btn primary" href="#quote">Get Free Quote</a>
+<a class="btn secondary" href="tel:+916377679952">📞 6377679952</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<strong>Dharmveer Packers & Movers</strong><br>
+Hyderabad & Secunderabad<br><br>
+<span class="small">Professional packing and moving services • Free quotation</span>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/916377679952" aria-label="WhatsApp">☘</a>
 
 <script>
-const locations = [
-["Hyderabad","Telangana"],["Secunderabad","Telangana"],["Banjara Hills","Telangana"],
-["Jubilee Hills","Telangana"],["Madhapur","Telangana"],["Gachibowli","Telangana"],
-["Kukatpally","Telangana"],["Miyapur","Telangana"],["Kondapur","Telangana"],
-["Begumpet","Telangana"],["Bowenpally","Telangana"],["Hafeezpet","Telangana"],
-["Delhi","Delhi"],["New Delhi","Delhi"],["Noida","Uttar Pradesh"],["Greater Noida","Uttar Pradesh"],
-["Gurugram","Haryana"],["Faridabad","Haryana"],["Ghaziabad","Uttar Pradesh"],
-["Mumbai","Maharashtra"],["Navi Mumbai","Maharashtra"],["Thane","Maharashtra"],
-["Pune","Maharashtra"],["Nagpur","Maharashtra"],["Nashik","Maharashtra"],
-["Bengaluru","Karnataka"],["Mysuru","Karnataka"],["Chennai","Tamil Nadu"],
-["Coimbatore","Tamil Nadu"],["Kolkata","West Bengal"],["Ahmedabad","Gujarat"],
-["Surat","Gujarat"],["Vadodara","Gujarat"],["Jaipur","Rajasthan"],["Jodhpur","Rajasthan"],
-["Udaipur","Rajasthan"],["Lucknow","Uttar Pradesh"],["Kanpur","Uttar Pradesh"],
-["Agra","Uttar Pradesh"],["Varanasi","Uttar Pradesh"],["Chandigarh","Chandigarh"],
-["Amritsar","Punjab"],["Ludhiana","Punjab"],["Patna","Bihar"],["Ranchi","Jharkhand"],
-["Bhopal","Madhya Pradesh"],["Indore","Madhya Pradesh"],["Raipur","Chhattisgarh"],
-["Bhubaneswar","Odisha"],["Guwahati","Assam"],["Kochi","Kerala"],["Thiruvananthapuram","Kerala"],
-["Visakhapatnam","Andhra Pradesh"],["Vijayawada","Andhra Pradesh"],["Tirupati","Andhra Pradesh"],
-["Goa","Goa"],["Panaji","Goa"],["Dehradun","Uttarakhand"],["Haridwar","Uttarakhand"],
-["Srinagar","Jammu & Kashmir"],["Jammu","Jammu & Kashmir"],["Shimla","Himachal Pradesh"],
-["Jalandhar","Punjab"],["Meerut","Uttar Pradesh"],["Prayagraj","Uttar Pradesh"],
-["Nainital","Uttarakhand"],["Mangalore","Karnataka"],["Madurai","Tamil Nadu"],
-["Aurangabad","Maharashtra"],["Rajkot","Gujarat"],["Jamshedpur","Jharkhand"]
-];
-
-const input = document.getElementById("area");
-const box = document.getElementById("suggestions");
-const selected = document.getElementById("selected");
-
-function showSuggestions(value){
-  const q = value.trim().toLowerCase();
-  box.innerHTML = "";
-  if(q.length < 2){ box.style.display="none"; return; }
-
-  const matches = locations
-    .filter(([city,state]) => (city+" "+state).toLowerCase().includes(q))
-    .sort((a,b)=>{
-      const ac=a[0].toLowerCase().startsWith(q), bc=b[0].toLowerCase().startsWith(q);
-      return Number(bc)-Number(ac) || a[0].localeCompare(b[0]);
-    })
-    .slice(0,25);
-
-  if(!matches.length){
-    box.innerHTML = '<div class="item">No saved location found — press Enter to use "'+
-      value.replace(/</g,"&lt;")+'"</div>';
-  } else {
-    matches.forEach(([city,state])=>{
-      const div=document.createElement("div");
-      div.className="item";
-      div.innerHTML='<div class="city"></div><div class="state"></div>';
-      div.querySelector(".city").textContent=city;
-      div.querySelector(".state").textContent=state;
-      div.onclick=()=>selectLocation(city,state);
-      box.appendChild(div);
-    });
-  }
-  box.style.display="block";
-}
-
-function selectLocation(city,state){
-  input.value=city;
-  selected.textContent="Selected area: "+city+", "+state;
-  selected.style.display="block";
-  box.style.display="none";
-}
-
-input.addEventListener("input",e=>showSuggestions(e.target.value));
-input.addEventListener("keydown",e=>{
-  if(e.key==="Enter" && input.value.trim()){
-    selected.textContent="Selected area: "+input.value.trim();
-    selected.style.display="block";
-    box.style.display="none";
-  }
-});
-document.addEventListener("click",e=>{
-  if(!e.target.closest(".search")) box.style.display="none";
+document.getElementById("quoteForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  const name=document.getElementById("name").value.trim();
+  const phone=document.getElementById("phone").value.trim();
+  const from=document.getElementById("from").value.trim();
+  const to=document.getElementById("to").value.trim();
+  const service=document.getElementById("service").value;
+  const date=document.getElementById("date").value || "Not specified";
+  if(!/^[0-9]{10}$/.test(phone)){alert("Please enter a valid 10-digit mobile number.");return;}
+  const msg=`New Moving Enquiry%0A%0AName: ${encodeURIComponent(name)}%0ACustomer Mobile: ${encodeURIComponent(phone)}%0AMoving From: ${encodeURIComponent(from)}%0AMoving To: ${encodeURIComponent(to)}%0AService: ${encodeURIComponent(service)}%0AMoving Date: ${encodeURIComponent(date)}`;
+  window.open("https://wa.me/916377679952?text="+msg,"_blank");
 });
 </script>
 </body>
